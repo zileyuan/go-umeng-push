@@ -2,7 +2,7 @@ package Upload
 
 import (
 	"encoding/json"
-	"go-umeng-push/Responses"
+	"github.com/zileyuan/go-umeng-push/Responses"
 	"net/http"
 )
 

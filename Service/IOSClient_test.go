@@ -2,7 +2,7 @@ package Service
 
 import (
 	"fmt"
-	"go-umeng-push/Constants"
+	"github.com/zileyuan/go-umeng-push/Constants"
 )
 
 func ExampleIOSClient_Broadcast() {
