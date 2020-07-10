@@ -118,7 +118,7 @@ func (a *Android) FilePush(payload AnPayload, policy Policy, option Option, file
 //群組推播
 func (a *Android) GroupPush(payload AnPayload, policy Policy, option Option, filter string) (response *TaskPush.TaskPush, err error) {
 	customized := AnCustomized{
-		PushType: Constants.FILE_PUSH,
+		PushType: Constants.CUSTOMIZED_PUSH,
 		Filter:   filter,
 	}
 	params, err := a.getParams(payload, policy, customized, option)
@@ -133,7 +133,7 @@ func (a *Android) GroupPush(payload AnPayload, policy Policy, option Option, fil
 //客製推播
 func (a *Android) CustomizedPush(payload AnPayload, policy Policy, option Option, aliasType, alias, fileIds string) (response *TaskPush.TaskPush, err error) {
 	customized := AnCustomized{
-		PushType:  Constants.FILE_PUSH,
+		PushType:  Constants.CUSTOMIZED_PUSH,
 		AliasType: aliasType,
 		Alias:     alias,
 		FileId:    fileIds,
